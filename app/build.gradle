@@ -59,4 +59,7 @@ dependencies {
     implementation "com.github.ssseasonnn.RxDownload:rxdownload4-manager:1.1.4"
     implementation "com.github.ssseasonnn.RxDownload:rxdownload4-notification:1.1.4"
     implementation "com.github.ssseasonnn.RxDownload:rxdownload4-recorder:1.1.4"
+    // 携程
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1"
 }
