@@ -23,12 +23,18 @@
         android:id="@+id/tv_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="View Demo" />
+        android:text="@string/view_demo" />
 
     <Button
         android:id="@+id/tv_tool"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="简化工具类" />
+        android:text="@string/simple_util" />
+
+    <Button
+        android:id="@+id/tv_hilt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hilt" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

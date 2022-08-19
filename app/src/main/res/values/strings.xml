@@ -4,4 +4,8 @@
     <string name="rxdownload">RxDownload</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragmenthilt">FragmentHilt</string>
+    <string name="simple_util">简化工具类</string>
+    <string name="view_demo">View Demo</string>
+    <string name="hilt">Hilt</string>
 </resources>
