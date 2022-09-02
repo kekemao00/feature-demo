@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import com.blankj.utilcode.util.EncryptUtils
 import com.xingkeqi.featerdemo.R
 import com.xingkeqi.featerdemo.base.BaseActivity
 import com.xingkeqi.featerdemo.databinding.ActivityHiltBinding
@@ -24,6 +25,7 @@ class HiltActivity : BaseActivity() {
 
 
         binding.tvMsg.setText(R.string.hilt)
+        Aes.decrypt("EfdsWqZNNP1egoiHzU0Phg==","soundpeats")
 
 //        val fragmentManager=supportFragmentManager
     }
