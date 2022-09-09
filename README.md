@@ -1,5 +1,5 @@
 # FeaterDemo
-:guitar: 功能事例
+:alembic: 功能示例实验室
 
 ![Lines of code](https://img.shields.io/tokei/lines/github.com/kekemao00/FeaterDemo)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/kekemao00/FeaterDemo)
