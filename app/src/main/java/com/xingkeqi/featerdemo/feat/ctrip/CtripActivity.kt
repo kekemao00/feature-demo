@@ -6,24 +6,28 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.xingkeqi.featerdemo.databinding.ActivityCtripBinding
 import io.reactivex.android.schedulers.AndroidSchedulers
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.cancel
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
 
 class CtripActivity : AppCompatActivity() {
+
+    private val job = Job()
+    private val scope = CoroutineScope(job)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityCtripBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val job = Job()
-        val scope = CoroutineScope(job)
 
         scope.launch {}
         scope.launch {}
+
+    }
+
+    @OptIn(ExperimentalCoroutinesApi::class)
+    override fun onDestroy() {
+        super.onDestroy()
         scope.cancel()
-
     }
 
     companion object {
